@@ -2,7 +2,7 @@ import { COLOR_BUTTON_CLS } from "@components/link/color-button-link"
 import cn from "@lib/class-names"
 
 import IButtonProps from "@interfaces/button-props"
-import BaseButton from "./base-button"
+import { BaseButton } from "./base-button"
 
 export default function ColorButton({
   className,

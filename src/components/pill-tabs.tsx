@@ -74,7 +74,7 @@ export default function PillTabs({
               return (
                 <BaseButton
                   key={idx}
-                  ref={(el: HTMLElement) => (tabsRef.current[idx] = el)}
+                  ref={(el: HTMLElement|null) => (tabsRef.current[idx] = el)}
                   className={cn(PILL_CLS, [
                     idx === activeTabIndex,
                     "text-theme-500 dark:text-gray-50",

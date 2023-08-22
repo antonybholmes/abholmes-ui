@@ -17,7 +17,7 @@ export interface IOKCancelModel extends ITextModel {
   onClick?: (e: MouseEvent) => void
 }
 
-export default function OKCancelDialog({
+export function OKCancelDialog({
   title,
   text,
   visible,

@@ -1,4 +1,4 @@
-import BaseButton from "@components/button/base-button"
+import { BaseButton } from "@components/button/base-button"
 import BlueLinkButton from "@components/button/blue-link-button"
 
 import ChevronRightIcon from "@icons/chevron-right"

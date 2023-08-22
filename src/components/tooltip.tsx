@@ -1,7 +1,7 @@
 import IElementProps from "@interfaces/element-props"
 import {
-  Tooltip,
   TooltipContent,
+  Tooltip as TooltipPrimitive,
   TooltipProvider,
   TooltipTrigger,
 } from "./ui/tooltip"
@@ -34,7 +34,7 @@ interface IProps extends IElementProps {
 //   },
 // }
 
-export default function LMTooltip({ content, children }: IProps) {
+export function Tooltip({ content, children }: IProps) {
   // let timeout: NodeJS.Timeout | undefined = undefined
   // const [active, setActive] = useState(false)
 
@@ -61,12 +61,12 @@ export default function LMTooltip({ content, children }: IProps) {
 
   return (
     <TooltipProvider>
-      <Tooltip>
+      <TooltipPrimitive>
         <TooltipTrigger asChild>{children}</TooltipTrigger>
         <TooltipContent side="bottom">
           <p>{content}</p>
         </TooltipContent>
-      </Tooltip>
+      </TooltipPrimitive>
     </TooltipProvider>
   )
 }

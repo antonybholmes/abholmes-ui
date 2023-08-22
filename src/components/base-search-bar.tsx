@@ -7,7 +7,7 @@ import { FocusEvent, MouseEvent, useRef } from "react"
 
 import IElementProps from "@interfaces/element-props"
 import { ICON_BUTTON_CLS } from "@theme"
-import BaseButton from "./button/base-button"
+import { BaseButton } from "./button/base-button"
 
 export interface ISearchBarProps extends IElementProps {
   id: string

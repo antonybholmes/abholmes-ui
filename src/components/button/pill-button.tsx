@@ -1,7 +1,7 @@
 import IButtonProps from "@interfaces/button-props"
 import cn from "@lib/class-names"
 import { PILL_BUTTON_CLS } from "@theme"
-import BaseButton from "./base-button"
+import { BaseButton } from "./base-button"
 
 export default function PillButton({
   className,

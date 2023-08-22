@@ -3,7 +3,7 @@
 import type IClassProps from "@interfaces/class-props"
 import { useEffect, useState } from "react"
 
-import { DynamicTooltip } from "@components/dynamic-tooltip"
+import { Tooltip } from "@components/tooltip"
 import { Button } from "@components/ui/button"
 import {
   DropdownMenu,
@@ -53,13 +53,13 @@ export default function ThemeMenu({ className }: IClassProps) {
 
   return (
     <DropdownMenu open={dropDownVisible} onOpenChange={setDropDownVisible}>
-      <DynamicTooltip content="Toggle dark mode">
+      <Tooltip content="Toggle dark mode">
         <DropdownMenuTrigger asChild>
           <Button aria-label="Toggle dark mode" variant="link" size="icon">
             {getIcon(theme)}
           </Button>
         </DropdownMenuTrigger>
-      </DynamicTooltip>
+      </Tooltip>
 
       <DropdownMenuContent
         onEscapeKeyDown={() => setDropDownVisible(false)}
