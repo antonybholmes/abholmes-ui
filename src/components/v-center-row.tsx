@@ -1,5 +1,6 @@
-import { IDivProps } from "@interfaces/div-props"
 import { ForwardedRef, forwardRef } from "react"
+import { IDivProps } from "../interfaces/div-props"
+import { clns } from "../lib/class-names"
 import { BaseRow } from "./base-row"
 
 export const V_CENTER_ROW_CLS = "flex flex-row items-center"

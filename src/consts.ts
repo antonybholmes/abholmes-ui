@@ -1,6 +1,6 @@
 // Place any global data in this file.
 // You can import this data from anywhere in your site by using the `import` keyword.
-import { FOCUS_RING_CLS, INPUT_BORDER_CLS, INPUT_DARK_BORDER_CLS } from "@theme"
+import { FOCUS_RING_CLS, INPUT_BORDER_CLS, INPUT_DARK_BORDER_CLS } from "./theme"
 
 export const LOGIN_ROUTE = "/login"
 

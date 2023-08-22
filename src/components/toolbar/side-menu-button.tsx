@@ -1,6 +1,7 @@
 import IButtonProps from "../../interfaces/button-props"
 
 import { ForwardedRef, forwardRef, useRef } from "react"
+import { clns } from "../../lib/class-names"
 import ToolbarIconButton from "./toolbar-icon-button"
 
 const X1 = 2

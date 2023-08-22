@@ -1,12 +1,13 @@
 
-import {
-	BASE_BUTTON_CLS,
-	INPUT_BORDER_CLS,
-	INPUT_DARK_BG_CLS,
-	INPUT_DARK_BORDER_CLS,
-	ROUNDED_BUTTON_CLS,
-} from "@theme"
 import { useState } from "react"
+import { clns } from "../lib/class-names"
+import {
+  BASE_BUTTON_CLS,
+  INPUT_BORDER_CLS,
+  INPUT_DARK_BG_CLS,
+  INPUT_DARK_BORDER_CLS,
+  ROUNDED_BUTTON_CLS,
+} from "../theme"
 import BaseSearchBar, { ISearchBarProps } from "./base-search-bar"
 
 const SEARCH_CLS = clns(
