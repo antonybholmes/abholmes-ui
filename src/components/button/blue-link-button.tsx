@@ -1,5 +1,5 @@
 import IButtonProps from "../../interfaces/button-props"
-import cn from "../../lib/class-names"
+import { cn } from "../../lib/class-names"
 import { PRIMARY_LINK_CLS } from "../../theme"
 import { BasicButton } from "./basic-button"
 

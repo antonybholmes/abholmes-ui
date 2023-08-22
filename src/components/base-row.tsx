@@ -1,6 +1,6 @@
-import IDivProps from "@interfaces/div-props"
+import { IDivProps } from "@interfaces/div-props"
 import { ForwardedRef, forwardRef } from "react"
-import cn from "../lib/class-names"
+import { cn } from "../lib/class-names"
 
 export const ROW_CLS = "flex flex-row"
 

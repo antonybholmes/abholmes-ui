@@ -67,7 +67,7 @@ function _cn(args: CSSClass, classes: Set<String>) {
  * @param args string or array of strings of classnames. Also supports condition c
  * @returns a space separated string of class names.
  */
-export default function cn(...args: CSSClass[]): string | undefined {
+export function cn(...args: CSSClass[]): string | undefined {
   const used = new Set<string>()
   const classes: Set<String> = new Set()
 

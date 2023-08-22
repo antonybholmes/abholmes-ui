@@ -1,4 +1,4 @@
-import cn from "../lib/class-names"
+import { cn } from "../lib/class-names"
 
 import {
 	BASE_BUTTON_CLS,

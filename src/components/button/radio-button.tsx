@@ -1,5 +1,5 @@
 import IButtonProps from "../../interfaces/button-props"
-import cn from "../../lib/class-names"
+import { cn } from "../../lib/class-names"
 import VCenterRow from "../v-center-row"
 import { BaseButton } from "./base-button"
 

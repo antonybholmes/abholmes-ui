@@ -1,5 +1,5 @@
 import { ComponentPropsWithoutRef, ForwardedRef, forwardRef } from "react"
-import cn from "../lib/class-names"
+import { cn } from "../lib/class-names"
 
 const BaseCol = forwardRef(function BaseCol(
   { className, children, ...props }: ComponentPropsWithoutRef<"div">,

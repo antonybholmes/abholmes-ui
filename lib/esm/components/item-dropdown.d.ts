@@ -1,6 +1,6 @@
 import { IDBItem } from "..lib/types";
 import { DropDownClick, DropDownRenderer, IDropDownMenuItem } from "@abholmes/ui";
-import IElementProps from "@interfaces/element-props";
+import { IElementProps } from "@interfaces/element-props";
 interface IProps<T extends IDBItem> extends IElementProps {
     name: string;
     items: IDropDownMenuItem<T>[];

@@ -1,5 +1,5 @@
-import IDivProps from "../../interfaces/div-props"
-import cn from "../../lib/class-names"
+import { IDivProps } from "../../interfaces/div-props"
+import { cn } from "../../lib/class-names"
 
 interface IProps extends IDivProps {
   visible: boolean

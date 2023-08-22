@@ -1,6 +1,6 @@
 import { IDBItem } from "..lib/types";
 import { DropDownClick, DropDownRenderer } from "@abholmes/ui";
-import IElementProps from "@interfaces/element-props";
+import { IElementProps } from "@interfaces/element-props";
 export type IAutoCompleteOnChange = (text: string) => void;
 interface IProps<T extends IDBItem> extends IElementProps {
     id: string;

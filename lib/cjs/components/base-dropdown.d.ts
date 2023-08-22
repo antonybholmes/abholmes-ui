@@ -1,6 +1,6 @@
-import type IChildProps from "@interfaces/child-props";
+import { IElementProps } from "../interfaces/element-props";
 export declare const DROPDOWN_CLS = "left-0";
-interface IProps extends IChildProps {
+interface IProps extends IElementProps {
     dropDownVisible: boolean;
     onClose?: () => void;
     menuClassName?: string;

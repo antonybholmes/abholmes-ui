@@ -1,5 +1,5 @@
 import { MouseEvent } from "react";
-import IElementProps from "@interfaces/element-props";
+import { IElementProps } from "@interfaces/element-props";
 export interface ISearchBarProps extends IElementProps {
     id: string;
     search: string;

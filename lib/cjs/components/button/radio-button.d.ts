@@ -1,4 +1,4 @@
-import IButtonProps from "@interfaces/button-props";
+import IButtonProps from "../../interfaces/button-props";
 interface IRadioButtonProps extends IButtonProps {
     index: number;
     selected: boolean;

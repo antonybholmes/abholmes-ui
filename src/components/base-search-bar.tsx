@@ -1,11 +1,11 @@
 import VCenterRow from "@components/v-center-row"
 import { CloseIcon } from "@icons/close"
 import { SearchIcon } from "@icons/search"
-import cn from "../lib/class-names"
+import { cn } from "../lib/class-names"
 
 import { FocusEvent, MouseEvent, useRef } from "react"
 
-import IElementProps from "@interfaces/element-props"
+import { IElementProps } from "@interfaces/element-props"
 import { ICON_BUTTON_CLS } from "@theme"
 import { BaseButton } from "./button/base-button"
 

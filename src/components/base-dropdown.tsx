@@ -1,11 +1,11 @@
-import type IChildProps from "@interfaces/child-props"
 
-import { KeyboardEvent } from "react"
+import { Children, KeyboardEvent } from "react"
+import { IElementProps } from "../interfaces/element-props"
 import { Popover, PopoverContent, PopoverTrigger } from "./ui/popover"
 
 export const DROPDOWN_CLS = "left-0"
 
-interface IProps extends IChildProps {
+interface IProps extends IElementProps {
   dropDownVisible: boolean
   onClose?: () => void
   menuClassName?: string
@@ -50,16 +50,18 @@ export function BaseDropDown({
     }
   }
 
+  const c = Children.toArray(children)
+
   return (
     <Popover open={dropDownVisible}>
-      <PopoverTrigger asChild>{children[0]}</PopoverTrigger>
+      <PopoverTrigger asChild>{c[0]}</PopoverTrigger>
       <PopoverContent
         onInteractOutside={() => _onClose()}
         onEscapeKeyDown={() => _onClose()}
         onOpenAutoFocus={onOpenAutoFocus}
         className={menuClassName}
       >
-        {children[1]}
+        {c[1]}
       </PopoverContent>
     </Popover>
   )

@@ -1,6 +1,6 @@
 import { Button } from "../../components/ui/button"
 import IButtonProps from "../../interfaces/button-props"
-import cn from "../../lib/class-names"
+import { cn } from "../../lib/class-names"
 
 import { Children } from "react"
 

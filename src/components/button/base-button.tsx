@@ -2,7 +2,7 @@ import useMouseUpListener from "../../hooks/use-mouseup-listener"
 import IButtonProps from "../../interfaces/button-props"
 
 import { ForwardedRef, forwardRef } from "react"
-import cn from "../../lib/class-names"
+import { cn } from "../../lib/class-names"
 import { BASE_BUTTON_CLS } from "../../theme"
 
 export type ButtonType = "button" | "submit" | "reset" | undefined

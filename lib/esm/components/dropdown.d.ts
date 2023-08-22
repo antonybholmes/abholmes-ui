@@ -1,5 +1,5 @@
-import IElementProps from "@interfaces/element-props";
 import { ReactElement } from "react";
+import { IElementProps } from "../interfaces/element-props";
 export interface IDropDownMenuItem<T> {
     id: string | number;
     label: string;

@@ -1,4 +1,4 @@
-import IElementProps from "@interfaces/element-props";
+import { IElementProps } from "@interfaces/element-props";
 import { ReactElement } from "react";
 export declare const DROPDOWN_CLS = "left-0";
 export interface IDropDownMenuItem<T> {
@@ -19,4 +19,5 @@ interface IProps<T> extends IElementProps {
     autoClose?: boolean;
 }
 export declare function Dropdown<T>({ dropDownVisible, items, onDropClick, renderListItem, onClose, className, children, }: IProps<T>): import("react/jsx-runtime").JSX.Element;
-export {};
+export { };
+

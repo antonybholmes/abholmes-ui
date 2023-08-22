@@ -1,6 +1,6 @@
 import { ForwardedRef, forwardRef } from "react"
 import IButtonProps from "../../interfaces/button-props"
-import cn from "../../lib/class-names"
+import { cn } from "../../lib/class-names"
 import { TOOLBAR_ICON_BUTTON_CLS } from "../../theme"
 import ToolbarButton from "./toolbar-button"
 

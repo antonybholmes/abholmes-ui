@@ -1,5 +1,5 @@
-import { ComponentPropsWithoutRef } from "react";
-interface IProps extends ComponentPropsWithoutRef<"div"> {
+import { IDivProps } from "../../interfaces/div-props";
+interface IProps extends IDivProps {
     visible: boolean;
 }
 export declare const SCREEN_CLS: string | undefined;

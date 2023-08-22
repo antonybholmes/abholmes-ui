@@ -1,5 +1,5 @@
 import type IChildrenProps from "@interfaces/children-props"
-import cn from "../../lib/class-names"
+import { cn } from "../../lib/class-names"
 
 export const CLS_ALERT =
   "bg-green-200 text-green-600 p-3 rounded text-sm font-semibold text-center"

@@ -5,7 +5,7 @@ const Y2 = 9
 const Y1 = Y2 - 4
 const Y3 = Y2 + 4
 
-export default function IndexArrow({ className }: IClassProps) {
+export function IndexArrowIcon({ className }: IClassProps) {
   //const lineRef = useRef(null)
   //const arrowRef = useRef(null)
 

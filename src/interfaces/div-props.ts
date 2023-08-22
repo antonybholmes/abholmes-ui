@@ -1,4 +1,4 @@
-import { HTMLAttributes, PropsWithoutRef } from "react"
+import { HTMLAttributes, PropsWithoutRef } from "react";
 
-export default interface IDivProps
+export interface IDivProps
   extends PropsWithoutRef<HTMLAttributes<HTMLDivElement>> {}

@@ -1,4 +1,4 @@
-import IElementProps from "@interfaces/element-props";
+import { IElementProps } from "@interfaces/element-props";
 import { MouseEvent, ReactNode } from "react";
 export type ITabClick = (e: MouseEvent, index: number) => void;
 export interface ITab {

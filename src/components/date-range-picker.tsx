@@ -1,8 +1,8 @@
 import { BaseButton } from "./button/base-button"
 import { BlueLinkButton } from "./button/blue-link-button"
 
-import { ChevronRightIcon } from "@icons/chevron-right"
-import cn from "../lib/class-names"
+import { ChevronRightIcon } from "../icons/chevron-right"
+import { cn } from "../lib/class-names"
 
 import { addMonths, format, getDay, getDaysInMonth, subMonths } from "date-fns"
 import { range } from "lodash"
@@ -16,12 +16,12 @@ import {
   MENU_BUTTON_CLS,
   PILL_BUTTON_CLS,
   PRIMARY_FOCUS_BORDER_CLS,
-} from "@theme"
+} from "../theme"
 import { BaseRow } from "./base-row"
 import HCenterRow from "./h-center-row"
 
-import { IDateUpdate } from "@interfaces"
-import { IDateRange } from "@interfaces/date-range"
+import { IDateRange } from "../interfaces/date-range"
+import { IDateUpdate } from "../interfaces/date-update"
 import ToolbarButton from "./toolbar/toolbar-button"
 import ToolbarIconButton from "./toolbar/toolbar-icon-button"
 

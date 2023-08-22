@@ -1,4 +1,4 @@
-import IElementProps from "@interfaces/element-props"
+import { IElementProps } from "@interfaces/element-props"
 import {
   TooltipContent,
   Tooltip as TooltipPrimitive,

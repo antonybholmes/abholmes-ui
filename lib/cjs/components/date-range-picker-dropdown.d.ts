@@ -1,5 +1,5 @@
-import IElementProps from "@interfaces/element-props";
 import { IDateUpdate } from "../interfaces/date-update";
+import { IElementProps } from "../interfaces/element-props";
 interface IProps extends IElementProps {
     dates: IDateUpdate;
     onDatesChange?: (dates: IDateUpdate) => void;

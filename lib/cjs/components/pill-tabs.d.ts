@@ -1,4 +1,4 @@
-import IElementProps from "@interfaces/element-props";
+import { IElementProps } from "@interfaces/element-props";
 import { MouseEvent, ReactNode } from "react";
 export declare const PILL_CLS: string | undefined;
 export declare const SELECTED_PILL_CLS = "trans-300 absolute bottom-0 left-0 top-0 z-0 block h-full rounded-full bg-theme-100 transition-all dark:bg-gray-600";

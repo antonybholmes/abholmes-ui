@@ -1,4 +1,4 @@
-import { HTMLAttributes, PropsWithoutRef } from "react"
+import { HTMLAttributes, PropsWithoutRef } from "react";
 
-export default interface IElementProps
+export interface IElementProps
   extends PropsWithoutRef<HTMLAttributes<HTMLElement>> {}

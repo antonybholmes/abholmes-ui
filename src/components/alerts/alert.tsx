@@ -2,7 +2,7 @@ import { STATUS_SUCCESS } from "@/consts"
 import type IQueryStatus from "@/interfaces/query-status"
 import HCenterRow from "@components/h-center-row"
 import type IClassProps from "@interfaces/class-props"
-import cn from "../../lib/class-names"
+import { cn } from "../../lib/class-names"
 
 interface IProps extends IClassProps {
   alert: IQueryStatus | null | undefined
