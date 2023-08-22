@@ -1,7 +1,7 @@
-import { ComponentPropsWithoutRef } from "react"
+import IDivProps from "../../interfaces/div-props"
 import cn from "../../lib/class-names"
 
-interface IProps extends ComponentPropsWithoutRef<"div"> {
+interface IProps extends IDivProps {
   visible: boolean
 }
 
