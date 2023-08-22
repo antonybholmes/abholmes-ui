@@ -1,13 +1,11 @@
-import VCenterRow from "@components/v-center-row"
-import { CloseIcon } from "@icons/close"
-import { SearchIcon } from "@icons/search"
-
 import { FocusEvent, MouseEvent, useRef } from "react"
-
-import { IElementProps } from "@interfaces/element-props"
-import { clns } from "@lib/class-names"
-import { ICON_BUTTON_CLS } from "@theme"
+import { CloseIcon } from "../icons/close"
+import { SearchIcon } from "../icons/search"
+import { IElementProps } from "../interfaces/element-props"
+import { clns } from "../lib/class-names"
+import { ICON_BUTTON_CLS } from "../theme"
 import { BaseButton } from "./button/base-button"
+import VCenterRow from "./v-center-row"
 
 export interface ISearchBarProps extends IElementProps {
   id: string

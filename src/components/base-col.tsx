@@ -1,5 +1,6 @@
-import { clns } from "@lib/class-names"
+
 import { ComponentPropsWithoutRef, ForwardedRef, forwardRef } from "react"
+import { clns } from "../lib/class-names"
 
 export const BaseCol = forwardRef(function BaseCol(
   { className, children, ...props }: ComponentPropsWithoutRef<"div">,

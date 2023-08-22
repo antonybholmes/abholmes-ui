@@ -7,9 +7,11 @@ import {
 } from "@radix-ui/react-icons"
 import * as React from "react"
 
-import { cn } from "@lib/shadcn-utils"
-import { BUTTON_H_CLS } from "@theme"
+
 import { Children } from "react"
+
+import { cn } from "../../lib/shadcn-utils"
+import { BUTTON_H_CLS } from "../../theme"
 
 const DropdownMenu = DropdownMenuPrimitive.Root
 

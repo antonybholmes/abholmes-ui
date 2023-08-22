@@ -1,5 +1,6 @@
-import { clns } from "@lib/class-names"
+
 import IButtonProps from "../../interfaces/button-props"
+import { clns } from "../../lib/class-names"
 import VCenterRow from "../v-center-row"
 import { BaseButton } from "./base-button"
 

@@ -1,15 +1,10 @@
-import { BaseCol } from "@components/base-col"
-import { BaseRow } from "@components/base-row"
 
-import { IElementProps } from "@interfaces/element-props"
-import { clns } from "@lib/class-names"
-import {
-  BASE_BUTTON_CLS,
-  CENTERED_BUTTON_CLS,
-  FOCUS_RING_CLS,
-  ROUNDED_BUTTON_CLS,
-} from "@theme"
 import { MouseEvent, ReactNode, useEffect, useRef, useState } from "react"
+import { IElementProps } from "../interfaces/element-props"
+import { clns } from "../lib/class-names"
+import { BASE_BUTTON_CLS, CENTERED_BUTTON_CLS, FOCUS_RING_CLS, ROUNDED_BUTTON_CLS } from "../theme"
+import { BaseCol } from "./base-col"
+import { BaseRow } from "./base-row"
 import { BaseButton } from "./button/base-button"
 
 export type ITabClick = (e: MouseEvent, index: number) => void

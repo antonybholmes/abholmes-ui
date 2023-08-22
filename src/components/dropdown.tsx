@@ -1,6 +1,6 @@
-import { clns } from "@lib/class-names"
 import { MouseEvent, ReactElement } from "react"
 import { IElementProps } from "../interfaces/element-props"
+import { clns } from "../lib/class-names"
 import { BaseDropDown, DROPDOWN_CLS } from "./base-dropdown"
 import MenuButton from "./toolbar/menu-button"
 

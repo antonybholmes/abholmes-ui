@@ -1,6 +1,8 @@
 import * as Switch from "@radix-ui/react-switch"
-import { BUTTON_W_CLS, FOCUS_RING_CLS } from "@theme"
+
 import { ForwardedRef, forwardRef } from "react"
+import { clns } from "../../lib/class-names"
+import { BUTTON_W_CLS, FOCUS_RING_CLS } from "../../theme"
 import VCenterRow from "../v-center-row"
 import { type ICheckBoxProps } from "./check-box"
 

@@ -1,6 +1,6 @@
-import { clns } from "@lib/class-names"
 import { Button } from "../../components/ui/button"
 import IButtonProps from "../../interfaces/button-props"
+import { clns } from "../../lib/class-names"
 
 import { Children } from "react"
 

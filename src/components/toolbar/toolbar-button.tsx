@@ -1,7 +1,7 @@
-import { clns } from "@lib/class-names"
 import { ForwardedRef, forwardRef } from "react"
 import { Button } from "../../components/ui/button"
 import IButtonProps from "../../interfaces/button-props"
+import { clns } from "../../lib/class-names"
 
 const ToolbarButton = forwardRef(function ToolbarButton(
   { size = "default", className, children, ...props }: IButtonProps,

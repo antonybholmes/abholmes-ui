@@ -1,8 +1,9 @@
 import * as PopoverPrimitive from "@radix-ui/react-popover"
 import * as React from "react"
+import { clns } from "../../lib/class-names"
+import { ROUNDED_BUTTON_CLS } from "../../theme"
 
-import { clns } from "@lib/class-names"
-import { ROUNDED_BUTTON_CLS } from "@theme"
+
 
 const Popover = PopoverPrimitive.Root
 

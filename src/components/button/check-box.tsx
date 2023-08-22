@@ -1,16 +1,18 @@
-import { CHEVRON_CLS } from "@/consts"
+
 import * as Checkbox from "@radix-ui/react-checkbox"
 import { ForwardedRef, forwardRef } from "react"
 
-import IButtonProps from "@interfaces/button-props"
-import { clns } from "@lib/class-names"
+
+import { CHEVRON_CLS } from "../../consts"
+import IButtonProps from "../../interfaces/button-props"
+import { clns } from "../../lib/class-names"
 import {
   BASE_BUTTON_CLS,
   GROUP_FOCUS_RING_CLS,
   INPUT_BORDER_CLS,
   INPUT_DARK_BORDER_CLS,
   ROUNDED_BUTTON_CLS,
-} from "@theme"
+} from "../../theme"
 
 export type ICheckClick = (index: number, selected: boolean) => void
 

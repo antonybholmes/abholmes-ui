@@ -6,7 +6,7 @@ import { ChevronRightIcon } from "../icons/chevron-right"
 import { addMonths, format, getDay, getDaysInMonth, subMonths } from "date-fns"
 import { range } from "lodash"
 import { MouseEvent, useEffect, useRef, useState } from "react"
-import { CHEVRON_CLS } from "src/consts"
+import { CHEVRON_CLS } from "../consts"
 import { BaseCol } from "./base-col"
 
 import {
@@ -19,9 +19,9 @@ import {
 import { BaseRow } from "./base-row"
 import HCenterRow from "./h-center-row"
 
-import { clns } from "@lib/class-names"
 import { IDateRange } from "../interfaces/date-range"
 import { IDateUpdate } from "../interfaces/date-update"
+import { clns } from "../lib/class-names"
 import ToolbarButton from "./toolbar/toolbar-button"
 import ToolbarIconButton from "./toolbar/toolbar-icon-button"
 
