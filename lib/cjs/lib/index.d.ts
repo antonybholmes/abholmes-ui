@@ -1,2 +1,1 @@
-export * from "./class-names";
-export * from "./theme";
+export { cn } from "./class-names";

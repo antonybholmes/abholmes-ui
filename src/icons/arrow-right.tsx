@@ -1,6 +1,6 @@
-import IconProps from "@interfaces/icon-props"
+import { IIconProps } from "../interfaces/icon-props"
 
-const ArrowRightIcon = ({ className }: IconProps) => (
+const ArrowRightIcon = ({ className }: IIconProps) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 448 512"

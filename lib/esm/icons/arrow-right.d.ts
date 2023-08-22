@@ -1,2 +1,3 @@
-declare const ArrowRightIcon: ({ className }: IconProps) => import("react/jsx-runtime").JSX.Element;
+import { IIconProps } from "../interfaces/icon-props";
+declare const ArrowRightIcon: ({ className }: IIconProps) => import("react/jsx-runtime").JSX.Element;
 export default ArrowRightIcon;
