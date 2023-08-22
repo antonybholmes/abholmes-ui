@@ -1,5 +1,4 @@
-import type IIconProps from "../interfaces/icon-props"
-import { ICON_CLS } from "../interfaces/icon-props"
+import { ICON_CLS, IIconProps } from "../interfaces/icon-props"
 import { cn } from "../lib/class-names"
 
 export function SearchIcon({ size = "w-4", className }: IIconProps) {
