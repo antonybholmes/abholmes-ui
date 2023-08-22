@@ -1,4 +1,6 @@
 
+"use client"
+
 import { useEffect, useState } from "react"
 
 import { ComputerIcon } from "../../icons/computer"

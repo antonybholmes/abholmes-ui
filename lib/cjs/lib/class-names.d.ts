@@ -11,5 +11,4 @@ type CSSClass = string | number | object | undefined | CSSClass[] | [boolean, CS
  * @returns a space separated string of class names.
  */
 export declare function clns(...args: CSSClass[]): string | undefined;
-export { };
-
+export {};

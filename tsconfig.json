@@ -16,6 +16,7 @@
     "declaration": true,
     "sourceMap": true,
     "rootDir": "./src",
+    "baseUrl": ".",
   },
   "include": ["src/**/*.ts", "src/**/*.tsx"],
   "exclude": ["node_modules", "lib"]

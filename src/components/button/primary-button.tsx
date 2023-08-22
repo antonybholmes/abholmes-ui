@@ -2,7 +2,7 @@ import { ForwardedRef, forwardRef } from "react"
 import IButtonProps from "../../interfaces/button-props"
 import { Button } from "../ui/button"
 
-const PrimaryButton = forwardRef(function PrimaryButton(
+export const PrimaryButton = forwardRef(function PrimaryButton(
   { children, ...props }: IButtonProps,
   ref: ForwardedRef<HTMLButtonElement>,
 ) {
@@ -13,6 +13,3 @@ const PrimaryButton = forwardRef(function PrimaryButton(
   )
 })
 
-export default PrimaryButton
-
-//font-bold bg-theme-600 hover:bg-theme-600 text-white shadow-md rounded px-5 py-3 trans"

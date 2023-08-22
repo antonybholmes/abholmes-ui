@@ -1,5 +1,5 @@
-import type IQueryStatus from "@/interfaces/query-status";
-import type IClassProps from "@interfaces/class-props";
+import type IClassProps from "../../interfaces/class-props";
+import type IQueryStatus from "../../interfaces/query-status";
 interface IProps extends IClassProps {
     alert: IQueryStatus | null | undefined;
 }
