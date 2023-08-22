@@ -3,9 +3,9 @@ import IButtonProps from "@interfaces/button-props"
 import cn from "@lib/class-names"
 import { FOCUS_RING_CLS } from "@theme"
 import { ForwardedRef, forwardRef } from "react"
-import BaseButton from "./base-button"
+import { BaseButton } from "./base-button"
 
-const BasicButton = forwardRef(function BasicButton(
+export const BasicButton = forwardRef(function BasicButton(
   { className, children, ...props }: IButtonProps,
   ref: ForwardedRef<HTMLButtonElement>,
 ) {
@@ -16,4 +16,3 @@ const BasicButton = forwardRef(function BasicButton(
   )
 })
 
-export default BasicButton
