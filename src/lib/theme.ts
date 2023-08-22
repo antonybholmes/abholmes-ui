@@ -1,4 +1,4 @@
-import IStringMap from "@interfaces/string-map"
+import IStringMap from "../interfaces/string-map"
 
 export const THEME_CYCLE: IStringMap = {
   system: "light",

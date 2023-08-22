@@ -1,4 +1,6 @@
-import { IDivProps } from "@interfaces/div-props"
+
+import { IDivProps } from "../interfaces/div-props"
+import { clns } from "../lib/class-names"
 import { BaseRow } from "./base-row"
 
 export default function HCenterRow({

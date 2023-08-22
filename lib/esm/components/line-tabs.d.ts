@@ -1,5 +1,5 @@
-import { IElementProps } from "@interfaces/element-props";
 import { MouseEvent, ReactNode } from "react";
+import { IElementProps } from "../interfaces/element-props";
 export type ITabClick = (e: MouseEvent, index: number) => void;
 export interface ITab {
     tab: ReactNode;

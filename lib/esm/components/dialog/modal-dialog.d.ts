@@ -1,6 +1,6 @@
-import type IChildrenProps from "@interfaces/children-props";
 import { MouseEvent } from "react";
-export interface IModalProps extends IChildrenProps {
+import { IElementProps } from "../../interfaces";
+export interface IModalProps extends IElementProps {
     visible?: boolean;
     onCancel?: (e: MouseEvent | KeyboardEvent) => void;
 }

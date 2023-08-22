@@ -1,3 +1,4 @@
+import { MouseEvent } from "react"
 import {
   AlertDialog,
   AlertDialogAction,
@@ -7,8 +8,7 @@ import {
   AlertDialogFooter,
   AlertDialogHeader,
   AlertDialogTitle,
-} from "@components/ui/alert-dialog"
-import { MouseEvent } from "react"
+} from "../ui/alert-dialog"
 import { ITextModel } from "./text-dialog"
 
 export interface IOKCancelModel extends ITextModel {
@@ -23,7 +23,6 @@ export function OKCancelDialog({
   visible,
   onClick,
   onCancel,
-  className,
 }: IOKCancelModel) {
   return (
     <AlertDialog open={visible}>

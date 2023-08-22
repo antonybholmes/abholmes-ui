@@ -1,4 +1,6 @@
-import { IDivProps } from "@interfaces/div-props"
+
+import { IDivProps } from "../interfaces/div-props"
+import { clns } from "../lib/class-names"
 import { BaseCol } from "./base-col"
 
 export default function HCenterCol({

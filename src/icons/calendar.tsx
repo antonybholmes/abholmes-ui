@@ -1,4 +1,5 @@
 import { ICON_CLS, IIconProps } from "../interfaces/icon-props"
+import { clns } from "../lib/class-names"
 
 export function CalendarIcon({ size = "w-4", className }: IIconProps) {
   return (

@@ -3,8 +3,8 @@ import {
   AlertDialogContent,
   AlertDialogHeader,
   AlertDialogTitle,
-} from "@components/ui/alert-dialog"
-import { DialogDescription, DialogFooter } from "@components/ui/dialog"
+} from "../ui/alert-dialog"
+import { DialogDescription, DialogFooter } from "../ui/dialog"
 import { IModalProps } from "./modal-dialog"
 
 export interface ITextModel extends IModalProps {
@@ -16,8 +16,6 @@ export default function TextDialog({
   title,
   text,
   visible,
-  onCancel,
-  className,
   children,
 }: ITextModel) {
   return (

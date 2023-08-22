@@ -1,5 +1,5 @@
 /// <reference types="react" />
-import IButtonProps from "@interfaces/button-props";
+import IButtonProps from "../../interfaces/button-props";
 export type ICheckClick = (index: number, selected: boolean) => void;
 export interface ICheckBoxProps extends IButtonProps {
     index?: number;

@@ -1,7 +1,7 @@
-import { STATUS_SUCCESS } from "@/consts"
-import type IQueryStatus from "@/interfaces/query-status"
-import HCenterRow from "@components/h-center-row"
-import type IClassProps from "@interfaces/class-props"
+import HCenterRow from "../../components/h-center-row"
+import { STATUS_SUCCESS } from "../../consts"
+import type IClassProps from "../../interfaces/class-props"
+import type IQueryStatus from "../../interfaces/query-status"
 
 interface IProps extends IClassProps {
   alert: IQueryStatus | null | undefined

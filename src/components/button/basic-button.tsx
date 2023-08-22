@@ -1,6 +1,7 @@
 import IButtonProps from "../../interfaces/button-props"
 
 import { ForwardedRef, forwardRef } from "react"
+import { clns } from "../../lib/class-names"
 import { FOCUS_RING_CLS } from "../../theme"
 import { BaseButton } from "./base-button"
 

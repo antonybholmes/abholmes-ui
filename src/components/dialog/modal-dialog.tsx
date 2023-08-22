@@ -1,9 +1,11 @@
-import useDelayHide from "@hooks/use-delay-hide"
-import type IChildrenProps from "@interfaces/children-props"
+
 import { MouseEvent, useCallback, useEffect, useRef } from "react"
+import useDelayHide from "../../hooks/use-delay-hide"
+import { IElementProps } from "../../interfaces"
+import { clns } from "../../lib/class-names"
 import ModalBgScreen from "./modal-bg-screen"
 
-export interface IModalProps extends IChildrenProps {
+export interface IModalProps extends IElementProps {
   visible?: boolean
   onCancel?: (e: MouseEvent | KeyboardEvent) => void
 }
