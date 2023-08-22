@@ -1,0 +1,15 @@
+import cn from "@lib/class-names"
+import type IIconProps from "../interfaces/icon-props"
+import { ICON_CLS } from "../interfaces/icon-props"
+
+export default function TableIcon({ size = "w-4", className }: IIconProps) {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 512 512"
+      className={cn(ICON_CLS, size, className)}
+    >
+      <path d="M64 256V160H224v96H64zm0 64H224v96H64V320zm224 96V320H448v96H288zM448 256H288V160H448v96zM64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64z" />
+    </svg>
+  )
+}

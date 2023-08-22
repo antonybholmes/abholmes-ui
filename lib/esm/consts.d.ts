@@ -1,3 +1,6 @@
+export declare const LOGIN_ROUTE = "/login";
+export declare const ORDER_ITEM_TEXT = "Order Item";
+export declare const ORDER_BUTTON_TEXT = "Order";
 export declare const DELETE_TEXT = "Delete";
 export declare const NO_RESULTS_TEXT = "Nothing to see here.";
 export declare const ALT_TEXT_CLS = "text-gray-400 dark:text-gray-500";
@@ -11,7 +14,7 @@ export declare const INPUT_CLS: string | undefined;
 export declare const TABLE_CLS = "text-sm";
 export declare const TD_CLS = "p-2 align-top";
 export declare const TH_CLS: string | undefined;
-export declare const FILTER_BUTTON_CLS = "px-2 py-1.5 text-primary-500 border border-primary-300 rounded-full";
+export declare const FILTER_BUTTON_CLS = "px-2 py-1.5 text-theme-500 border border-theme-300 rounded-full";
 export declare const ALT_TR_CLS = "bg-gray-100";
 export declare const TBODY_CLS = "border border-gray-200 bg-white text-sm";
 export declare const SIDE_DROPDOWN_CLS: string | undefined;

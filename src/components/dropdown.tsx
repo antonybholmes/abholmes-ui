@@ -2,7 +2,7 @@ import MenuButton from "@components/toolbar/menu-button"
 import IElementProps from "@interfaces/element-props"
 import cn from "@lib/class-names"
 import { MouseEvent, ReactElement } from "react"
-import BaseDropDown, { DROPDOWN_CLS } from "./base-dropdown"
+import { BaseDropDown, DROPDOWN_CLS } from "./base-dropdown"
 
 export interface IDropDownMenuItem<T> {
   id: string | number
@@ -56,7 +56,7 @@ interface IProps<T> extends IElementProps {
   menuClassName?: string
 }
 
-export default function Dropdown<T>({
+export function Dropdown<T>({
   dropDownVisible = false,
   items = [],
   onDropClick,

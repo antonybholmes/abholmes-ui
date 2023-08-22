@@ -12,7 +12,7 @@ interface IProps extends IChildProps {
   onOpenAutoFocus?: (e: Event) => void
 }
 
-export default function BaseDropDown({
+export function BaseDropDown({
   dropDownVisible = false,
   onClose,
   onOpenAutoFocus,

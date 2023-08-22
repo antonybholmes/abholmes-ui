@@ -1,15 +1,16 @@
 // Place any global data in this file.
 // You can import this data from anywhere in your site by using the `import` keyword.
 import cn from "@lib/class-names"
-import {
-  INPUT_BORDER_CLS,
-  INPUT_DARK_BORDER_CLS,
-  PRIMARY_FOCUS_RING_CLS,
-} from "@theme"
+import { FOCUS_RING_CLS, INPUT_BORDER_CLS, INPUT_DARK_BORDER_CLS } from "@theme"
 
+export const LOGIN_ROUTE = "/login"
+
+export const ORDER_ITEM_TEXT = "Order Item"
+export const ORDER_BUTTON_TEXT = "Order"
 export const DELETE_TEXT = "Delete"
 
 export const NO_RESULTS_TEXT = "Nothing to see here."
+
 
 export const ALT_TEXT_CLS = "text-gray-400 dark:text-gray-500"
 
@@ -31,10 +32,10 @@ export const INPUT_LABEL_CLS =
   "text-xs font-semibold text-gray-400 dark:text-gray-500 tracking-wide"
 
 export const INPUT_CLS = cn(
-  PRIMARY_FOCUS_RING_CLS,
+  FOCUS_RING_CLS,
   INPUT_BORDER_CLS,
   INPUT_DARK_BORDER_CLS,
-  "outline-none border-b py-1",
+  "outline-none border-b py-1 text-sm",
 )
 
 export const TABLE_CLS = "text-sm"
@@ -47,7 +48,7 @@ export const TH_CLS = cn(
 )
 
 export const FILTER_BUTTON_CLS =
-  "px-2 py-1.5 text-primary-500 border border-primary-300 rounded-full"
+  "px-2 py-1.5 text-theme-500 border border-theme-300 rounded-full"
 
 export const ALT_TR_CLS = "bg-gray-100"
 
