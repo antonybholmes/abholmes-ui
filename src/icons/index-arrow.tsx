@@ -1,11 +1,11 @@
-import IClassProps from "@interfaces/class-props"
+import { IIconProps } from "../interfaces"
 
 const W = 16
 const Y2 = 9
 const Y1 = Y2 - 4
 const Y3 = Y2 + 4
 
-export function IndexArrowIcon({ className }: IClassProps) {
+export function IndexArrowIcon({ className }: IIconProps) {
   //const lineRef = useRef(null)
   //const arrowRef = useRef(null)
 

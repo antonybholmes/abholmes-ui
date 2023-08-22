@@ -2,7 +2,6 @@ import { STATUS_SUCCESS } from "@/consts"
 import type IQueryStatus from "@/interfaces/query-status"
 import HCenterRow from "@components/h-center-row"
 import type IClassProps from "@interfaces/class-props"
-import { cn } from "../../lib/class-names"
 
 interface IProps extends IClassProps {
   alert: IQueryStatus | null | undefined
@@ -19,7 +18,7 @@ export const CLS_RED_ALERT =
 export default function Alert({ alert, className }: IProps) {
   return (
     <HCenterRow
-      className={cn(
+      className={clns(
         CLS_ALERT,
         [
           alert !== null && alert !== undefined,

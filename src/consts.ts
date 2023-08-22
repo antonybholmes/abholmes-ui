@@ -1,6 +1,5 @@
 // Place any global data in this file.
 // You can import this data from anywhere in your site by using the `import` keyword.
-import { cn } from "..lib/class-names"
 import { FOCUS_RING_CLS, INPUT_BORDER_CLS, INPUT_DARK_BORDER_CLS } from "@theme"
 
 export const LOGIN_ROUTE = "/login"
@@ -19,9 +18,9 @@ export const CENTER_CONTENT_CLS =
 
 export const BASE_FORM_CLS = "flex flex-col gap-y-4 text-sm"
 
-export const FORM_CLS = cn(BASE_FORM_CLS, "w-11/12 lg:w-1/2")
+export const FORM_CLS = clns(BASE_FORM_CLS, "w-11/12 lg:w-1/2")
 
-export const FORM_DIV_CLS = cn(
+export const FORM_DIV_CLS = clns(
   "p-4 lg:p-8 flex flex-col gap-y-4 rounded-lg border",
   INPUT_DARK_BORDER_CLS,
 )
@@ -31,7 +30,7 @@ export const FORM_BLOCK_CLS = "flex flex-col gap-y-2"
 export const INPUT_LABEL_CLS =
   "text-xs font-semibold text-gray-400 dark:text-gray-500 tracking-wide"
 
-export const INPUT_CLS = cn(
+export const INPUT_CLS = clns(
   FOCUS_RING_CLS,
   INPUT_BORDER_CLS,
   INPUT_DARK_BORDER_CLS,
@@ -42,7 +41,7 @@ export const TABLE_CLS = "text-sm"
 
 export const TD_CLS = "p-2 align-top"
 
-export const TH_CLS = cn(
+export const TH_CLS = clns(
   TD_CLS,
   "text-left font-bold text-xs text-gray-500 dark:text-gray-200",
 )
@@ -54,7 +53,7 @@ export const ALT_TR_CLS = "bg-gray-100"
 
 export const TBODY_CLS = "border border-gray-200 bg-white text-sm"
 
-export const SIDE_DROPDOWN_CLS = cn(
+export const SIDE_DROPDOWN_CLS = clns(
   "border-b border-gray-200",
   INPUT_DARK_BORDER_CLS,
 )

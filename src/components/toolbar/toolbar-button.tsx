@@ -1,7 +1,7 @@
+import { clns } from "@lib/class-names"
 import { ForwardedRef, forwardRef } from "react"
 import { Button } from "../../components/ui/button"
 import IButtonProps from "../../interfaces/button-props"
-import { cn } from "../../lib/shadcn-utils"
 
 const ToolbarButton = forwardRef(function ToolbarButton(
   { size = "default", className, children, ...props }: IButtonProps,
@@ -15,7 +15,7 @@ const ToolbarButton = forwardRef(function ToolbarButton(
       ref={ref}
       variant="ghost"
       size={size}
-      className={cn("gap-x-2", className)}
+      className={clns("gap-x-2", className)}
       {...props}
     >
       {children}

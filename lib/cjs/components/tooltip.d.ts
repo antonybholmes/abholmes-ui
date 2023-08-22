@@ -1,4 +1,4 @@
-import { IElementProps } from "@interfaces/element-props";
+import { IElementProps } from "../interfaces/element-props";
 interface IProps extends IElementProps {
     direction?: string;
     delay?: number;

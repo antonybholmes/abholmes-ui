@@ -10,5 +10,6 @@ type CSSClass = string | number | object | undefined | CSSClass[] | [boolean, CS
  * @param args string or array of strings of classnames. Also supports condition c
  * @returns a space separated string of class names.
  */
-export declare function cn(...args: CSSClass[]): string | undefined;
-export {};
+export declare function clns(...args: CSSClass[]): string | undefined;
+export { };
+

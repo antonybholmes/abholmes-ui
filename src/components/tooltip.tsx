@@ -1,4 +1,4 @@
-import { IElementProps } from "@interfaces/element-props"
+import { IElementProps } from "../interfaces/element-props"
 import {
   TooltipContent,
   Tooltip as TooltipPrimitive,
@@ -11,7 +11,7 @@ interface IProps extends IElementProps {
   delay?: number
 }
 
-// export const TOOLTIP_CLS = cn(
+// export const TOOLTIP_CLS = clns(
 //   "absolute z-overlay whitespace-nowrap rounded-md pointer-events-none",
 //   "bg-gray-600 px-3 py-2 text-white shadow-lg dark:bg-gray-600",
 //   "duration-300 ease-in-out fill-mode-forwards",

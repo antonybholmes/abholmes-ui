@@ -1,9 +1,9 @@
 import { CHEVRON_CLS } from "@/consts"
 import * as Checkbox from "@radix-ui/react-checkbox"
 import { ForwardedRef, forwardRef } from "react"
-import { cn } from "../../lib/class-names"
 
 import IButtonProps from "@interfaces/button-props"
+import { clns } from "@lib/class-names"
 import {
   BASE_BUTTON_CLS,
   GROUP_FOCUS_RING_CLS,
@@ -20,14 +20,14 @@ export interface ICheckBoxProps extends IButtonProps {
   onCheckClick?: ICheckClick
 }
 
-export const CHECK_CLS = cn(
+export const CHECK_CLS = clns(
   BASE_BUTTON_CLS,
   ROUNDED_BUTTON_CLS,
 
   "shrink-0 cursor-pointer gap-x-2 whitespace-nowrap text-left",
 )
 
-export const TICK_CLS = cn(
+export const TICK_CLS = clns(
   INPUT_BORDER_CLS,
   INPUT_DARK_BORDER_CLS,
   GROUP_FOCUS_RING_CLS,
@@ -55,7 +55,7 @@ const CheckBox = forwardRef(function CheckBox(
       ref={ref}
       checked={isSelected}
       onCheckedChange={_onClick}
-      className={cn(CHECK_CLS, className)}
+      className={clns(CHECK_CLS, className)}
     >
       <svg
         viewBox="0 0 24 24"
@@ -70,7 +70,7 @@ const CheckBox = forwardRef(function CheckBox(
         {isSelected && (
           <path
             d="M 5,12.5 L 10,18 L 19,6"
-            className={cn(CHEVRON_CLS, "stroke-3")}
+            className={clns(CHEVRON_CLS, "stroke-3")}
           />
         )}
       </svg>

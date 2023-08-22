@@ -1,6 +1,5 @@
 import { IDivProps } from "@interfaces/div-props"
-import { cn } from "../lib/class-names"
-import BaseCol from "./base-col"
+import { BaseCol } from "./base-col"
 
 export default function HCenterCol({
   className = "",
@@ -8,7 +7,7 @@ export default function HCenterCol({
   ...props
 }: IDivProps) {
   return (
-    <BaseCol className={cn("items-center", className)} {...props}>
+    <BaseCol className={clns("items-center", className)} {...props}>
       {children}
     </BaseCol>
   )

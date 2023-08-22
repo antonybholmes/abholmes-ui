@@ -1,6 +1,6 @@
-import { IIconProps } from "@interfaces/icon-props"
+import { IIconProps } from "../interfaces/icon-props";
 
-export default function ComputerIcon({ className }: IIconProps) {
+export function ComputerIcon({ className }: IIconProps) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"

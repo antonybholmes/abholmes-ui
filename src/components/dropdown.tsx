@@ -1,6 +1,6 @@
+import { clns } from "@lib/class-names"
 import { MouseEvent, ReactElement } from "react"
 import { IElementProps } from "../interfaces/element-props"
-import { cn } from "../lib/class-names"
 import { BaseDropDown, DROPDOWN_CLS } from "./base-dropdown"
 import MenuButton from "./toolbar/menu-button"
 
@@ -89,7 +89,7 @@ export function Dropdown<T>({
       dropDownVisible={dropDownVisible}
       className={className}
       onClose={onClose}
-      menuClassName={cn(DROPDOWN_CLS, menuClassName)}
+      menuClassName={clns(DROPDOWN_CLS, menuClassName)}
       onOpenAutoFocus={onOpenAutoFocus}
     >
       <div>{children}</div>

@@ -1,5 +1,6 @@
 export * from './button';
 export * from './dialog';
+export * from './toolbar';
 
 export { Dropdown, defaultRenderListItem } from "./dropdown";
 export type { DropDownClick, DropDownRenderer, IDropDownMenuItem } from "./dropdown";
@@ -10,4 +11,6 @@ export { Tooltip } from "./tooltip";
 
 export { DateRangePicker } from "./date-range-picker";
 export { DateRangePickerDropdown } from "./date-range-picker-dropdown";
+
+export { BaseCol } from "./base-col";
 

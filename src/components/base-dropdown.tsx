@@ -68,12 +68,12 @@ export function BaseDropDown({
 
   {
     /* return (
-    <div ref={ref} className={cn("relative", className)} onKeyDown={onKeyDown}>
+    <div ref={ref} className={clns("relative", className)} onKeyDown={onKeyDown}>
       {children[0]}
 
       {(dropDownVisible || !hide) && (
         <BaseCol
-          className={cn(
+          className={clns(
             BASE_DROPDOWN_CLS,
             "duration-300 ease-in-out fill-mode-forwards",
             [

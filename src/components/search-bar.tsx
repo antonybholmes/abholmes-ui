@@ -1,4 +1,3 @@
-import { cn } from "../lib/class-names"
 
 import {
 	BASE_BUTTON_CLS,
@@ -10,7 +9,7 @@ import {
 import { useState } from "react"
 import BaseSearchBar, { ISearchBarProps } from "./base-search-bar"
 
-const SEARCH_CLS = cn(
+const SEARCH_CLS = clns(
   BASE_BUTTON_CLS,
   ROUNDED_BUTTON_CLS,
   INPUT_BORDER_CLS,
@@ -29,7 +28,7 @@ export default function SearchBar({
   return (
     <BaseSearchBar
       showClearButton={showClearButton}
-      className={cn(SEARCH_CLS, [focus, "ring-ring ring-2"], className)}
+      className={clns(SEARCH_CLS, [focus, "ring-ring ring-2"], className)}
       onFocus={() => setFocus(true)}
       onBlur={() => setFocus(false)}
       {...props}

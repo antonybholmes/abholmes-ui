@@ -1,5 +1,4 @@
 import IButtonProps from "../../interfaces/button-props"
-import { cn } from "../../lib/class-names"
 import { PRIMARY_LINK_CLS } from "../../theme"
 import { BasicButton } from "./basic-button"
 
@@ -10,7 +9,7 @@ export function BlueLinkButton({
 }: IButtonProps) {
   return (
     <BasicButton
-      className={cn(PRIMARY_LINK_CLS, "font-medium", className)}
+      className={clns(PRIMARY_LINK_CLS, "font-medium", className)}
       {...props}
     >
       {children}

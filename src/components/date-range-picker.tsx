@@ -2,13 +2,12 @@ import { BaseButton } from "./button/base-button"
 import { BlueLinkButton } from "./button/blue-link-button"
 
 import { ChevronRightIcon } from "../icons/chevron-right"
-import { cn } from "../lib/class-names"
 
 import { addMonths, format, getDay, getDaysInMonth, subMonths } from "date-fns"
 import { range } from "lodash"
 import { MouseEvent, useEffect, useRef, useState } from "react"
 import { CHEVRON_CLS } from "src/consts"
-import BaseCol from "./base-col"
+import { BaseCol } from "./base-col"
 
 import {
   CENTERED_BUTTON_CLS,
@@ -20,6 +19,7 @@ import {
 import { BaseRow } from "./base-row"
 import HCenterRow from "./h-center-row"
 
+import { clns } from "@lib/class-names"
 import { IDateRange } from "../interfaces/date-range"
 import { IDateUpdate } from "../interfaces/date-update"
 import ToolbarButton from "./toolbar/toolbar-button"
@@ -141,7 +141,7 @@ interface IMonthViewProps {
   onDayHover?: (date: Date) => void
 }
 
-const DAY_BUTTON_CLS = cn(
+const DAY_BUTTON_CLS = clns(
   CENTERED_BUTTON_CLS,
   PILL_BUTTON_CLS,
   SIZE,
@@ -173,7 +173,7 @@ function MonthView({
         {SHORT_DAYS.map((day, di) => (
           <div
             key={di}
-            className={cn(
+            className={clns(
               CENTERED_BUTTON_CLS,
               SIZE,
               "text-xs font-semibold text-slate-400 dark:text-gray-400",
@@ -199,7 +199,7 @@ function MonthView({
           return (
             <div
               key={di}
-              className={cn(
+              className={clns(
                 "relative text-xs",
                 SIZE,
                 CENTERED_BUTTON_CLS,
@@ -220,7 +220,7 @@ function MonthView({
 
               {day.enabled && (
                 <BaseButton
-                  className={cn(
+                  className={clns(
                     DAY_BUTTON_CLS,
                     [today, "text-theme-500 font-bold"],
                     [
@@ -450,7 +450,7 @@ export function DateRangePicker({
           aria-label="Previous month"
         >
           <ChevronRightIcon
-            className={cn(CHEVRON_CLS, "rotate-180")}
+            className={clns(CHEVRON_CLS, "rotate-180")}
             size="w-3"
           />
         </ToolbarIconButton>
@@ -469,7 +469,7 @@ export function DateRangePicker({
         {/* <Button
             onClick={displayPrevMonth}
             aria-label="Previous month"
-            className={cn(
+            className={clns(
               PILL_BUTTON_CLS,
               DROPDOWN_BG_CLS,
               PRIMARY_FOCUS_RING_CLS,
@@ -479,7 +479,7 @@ export function DateRangePicker({
             )}
           >
             <ChevronRightIcon
-              className={cn(CHEVRON_CLS, "rotate-180")}
+              className={clns(CHEVRON_CLS, "rotate-180")}
               size="w-3"
             />
           </Button> */}
@@ -501,7 +501,7 @@ export function DateRangePicker({
             onDayHover={onDayHover}
           />
         </BaseRow>
-        {/* <Button onClick={displayNextMonth} aria-label="Next month" className={cn(
+        {/* <Button onClick={displayNextMonth} aria-label="Next month" className={clns(
               PILL_BUTTON_CLS,
               DROPDOWN_BG_CLS,
               PRIMARY_FOCUS_RING_CLS,
@@ -531,7 +531,7 @@ export function DateRangePicker({
               <li key={year}>
                 <BaseButton
                   id={`year-${year}`}
-                  className={cn(MENU_BUTTON_CLS, "shrink-0", [
+                  className={clns(MENU_BUTTON_CLS, "shrink-0", [
                     year === now.getFullYear(),
                     "text-theme-500",
                   ])}

@@ -1,7 +1,8 @@
-import BaseCol from "@components/base-col"
+import { BaseCol } from "@components/base-col"
 import { BaseRow } from "@components/base-row"
 
 import { IElementProps } from "@interfaces/element-props"
+import { clns } from "@lib/class-names"
 import {
   BASE_BUTTON_CLS,
   CENTERED_BUTTON_CLS,
@@ -9,7 +10,6 @@ import {
   ROUNDED_BUTTON_CLS,
 } from "@theme"
 import { MouseEvent, ReactNode, useEffect, useRef, useState } from "react"
-import { cn } from "../lib/class-names"
 import { BaseButton } from "./button/base-button"
 
 export type ITabClick = (e: MouseEvent, index: number) => void
@@ -25,7 +25,7 @@ interface IProps extends IElementProps {
   onTabClick?: ITabClick
 }
 
-const TAB_CLS = cn(
+const TAB_CLS = clns(
   BASE_BUTTON_CLS,
   FOCUS_RING_CLS,
   CENTERED_BUTTON_CLS,
@@ -68,7 +68,7 @@ export default function LineTabs({
 
   return (
     <>
-      <BaseCol className={cn("gap-y-1", className)}>
+      <BaseCol className={clns("gap-y-1", className)}>
         <div className="relative">
           <BaseRow className="relative z-10 gap-x-1">
             {tabs.map((tab, idx) => {
@@ -76,7 +76,7 @@ export default function LineTabs({
                 <BaseButton
                   key={idx}
                   ref={el => (tabsRef.current[idx] = el)}
-                  className={cn(TAB_CLS, [
+                  className={clns(TAB_CLS, [
                     idx === activeTabIndex,
                     "text-theme-500 dark:text-gray-50",
                     "hover:bg-accent",

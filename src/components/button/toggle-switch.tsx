@@ -1,11 +1,10 @@
 import * as Switch from "@radix-ui/react-switch"
 import { BUTTON_W_CLS, FOCUS_RING_CLS } from "@theme"
 import { ForwardedRef, forwardRef } from "react"
-import { cn } from "../../lib/class-names"
 import VCenterRow from "../v-center-row"
 import { type ICheckBoxProps } from "./check-box"
 
-const TOGGLE_CLS = cn(
+const TOGGLE_CLS = clns(
   FOCUS_RING_CLS,
   BUTTON_W_CLS,
   "overflow-hidden rounded-full outline-none",
@@ -13,7 +12,7 @@ const TOGGLE_CLS = cn(
   "data-[state=unchecked]:bg-input data-[state=unchecked]:hover:bg-secondary/80",
 )
 
-const THUMB_CLS = cn(
+const THUMB_CLS = clns(
   "pointer-events-none block h-5 w-5 rounded-full bg-background shadow-lg ring-0",
   "trans-300 ease-in-out transition-transform",
   "data-[state=checked]:translate-x-3 data-[state=unchecked]:translate-x-0",
@@ -33,7 +32,7 @@ const ToggleSwitch = forwardRef(function ToggleSwitch(
         ref={ref}
         checked={isSelected}
         onCheckedChange={_onClick}
-        className={cn(TOGGLE_CLS, className)}
+        className={clns(TOGGLE_CLS, className)}
         style={{ padding: 2 }}
       >
         <Switch.Thumb className={THUMB_CLS} />

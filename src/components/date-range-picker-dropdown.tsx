@@ -2,11 +2,11 @@
 import { addDays, format, subDays } from "date-fns"
 import { KeyboardEvent, useEffect, useRef, useState } from "react"
 import { CalendarIcon } from "../icons/calendar"
-import { cn } from "../lib/class-names"
 
 import { DateRangePicker } from "./date-range-picker"
 
 
+import { clns } from "@lib/class-names"
 import { ChevronRightIcon } from "../icons/chevron-right"
 import { IDateUpdate } from "../interfaces/date-update"
 import { IElementProps } from "../interfaces/element-props"
@@ -56,7 +56,7 @@ function DayInput({ id, date, onDateChange }: IDayInputProps) {
         type="text"
         aria-label="Date"
         value={dateValue}
-        className={cn("w-20 bg-transparent outline-none")}
+        className={clns("w-20 bg-transparent outline-none")}
         //onClick={_onClick}
 
         onKeyDown={onKeyDown}
@@ -133,7 +133,7 @@ export function DateRangePickerDropdown({
       onClose={onClose}
     >
       <VCenterRow
-        className={cn(
+        className={clns(
           FOCUS_RING_CLS,
           ROUNDED_BUTTON_CLS,
           "gap-x-2 border bg-white pl-2 ring-2",

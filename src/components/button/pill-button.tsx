@@ -1,5 +1,4 @@
 import IButtonProps from "../../interfaces/button-props"
-import { cn } from "../../lib/class-names"
 import { PILL_BUTTON_CLS } from "../../theme"
 import { BaseButton } from "./base-button"
 
@@ -9,7 +8,7 @@ export default function PillButton({
   ...props
 }: IButtonProps) {
   return (
-    <BaseButton className={cn(PILL_BUTTON_CLS, className)} {...props}>
+    <BaseButton className={clns(PILL_BUTTON_CLS, className)} {...props}>
       {children}
     </BaseButton>
   )

@@ -1,7 +1,6 @@
 import useDelayHide from "@hooks/use-delay-hide"
 import type IChildrenProps from "@interfaces/children-props"
 import { MouseEvent, useCallback, useEffect, useRef } from "react"
-import { cn } from "../../lib/class-names"
 import ModalBgScreen from "./modal-bg-screen"
 
 export interface IModalProps extends IChildrenProps {
@@ -91,7 +90,7 @@ export default function ModalDialog({
         className="flex flex-row items-center justify-center"
       >
         <div
-          className={cn(
+          className={clns(
             "flex flex-col rounded-lg bg-white p-6 shadow-lg dark:bg-gray-700",
             className,
           )}

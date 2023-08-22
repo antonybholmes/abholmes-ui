@@ -1,2 +1,2 @@
-import type IClassProps from "@interfaces/class-props";
-export default function ThemeMenu({ className }: IClassProps): import("react/jsx-runtime").JSX.Element;
+import { IElementProps } from "../../interfaces/element-props";
+export declare function ThemeMenu({ className }: IElementProps): import("react/jsx-runtime").JSX.Element;

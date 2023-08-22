@@ -1,7 +1,6 @@
 import IButtonProps from "../../interfaces/button-props"
 
 import { ForwardedRef, forwardRef, useRef } from "react"
-import { cn } from "../../lib/class-names"
 import ToolbarIconButton from "./toolbar-icon-button"
 
 const X1 = 2
@@ -135,7 +134,7 @@ const SideMenuButton = forwardRef(function SideMenuButton(
   return (
     <ToolbarIconButton
       ref={ref}
-      className={cn("relative shrink-0 grow-0", className)}
+      className={clns("relative shrink-0 grow-0", className)}
       {...props}
     >
       <svg
@@ -153,7 +152,7 @@ const SideMenuButton = forwardRef(function SideMenuButton(
           shapeRendering="crispEdges"
           strokeLinecap="round"
           strokeWidth={2}
-          className={cn("origin-center rotate-45 fill-mode-forwards", [
+          className={clns("origin-center rotate-45 fill-mode-forwards", [
             showMenu,
             "animate-menu-button-line1-hide",
             "animate-menu-button-line1-show",
@@ -170,7 +169,7 @@ const SideMenuButton = forwardRef(function SideMenuButton(
           strokeWidth={2}
           shapeRendering="crispEdges"
           strokeLinecap="round"
-          className={cn("origin-center -rotate-45 fill-mode-forwards", [
+          className={clns("origin-center -rotate-45 fill-mode-forwards", [
             showMenu,
             "animate-menu-button-line2-hide",
             "animate-menu-button-line2-show",

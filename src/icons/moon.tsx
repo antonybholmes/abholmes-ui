@@ -1,4 +1,4 @@
-import { IIconProps } from "@interfaces/icon-props"
+import { IIconProps } from "../interfaces/icon-props";
 
 export function MoonIcon({ className }: IIconProps) {
   return (

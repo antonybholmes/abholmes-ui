@@ -1,11 +1,11 @@
 import VCenterRow from "@components/v-center-row"
 import { CloseIcon } from "@icons/close"
 import { SearchIcon } from "@icons/search"
-import { cn } from "../lib/class-names"
 
 import { FocusEvent, MouseEvent, useRef } from "react"
 
 import { IElementProps } from "@interfaces/element-props"
+import { clns } from "@lib/class-names"
 import { ICON_BUTTON_CLS } from "@theme"
 import { BaseButton } from "./button/base-button"
 
@@ -39,14 +39,14 @@ export default function BaseSearchBar({
 
   return (
     <VCenterRow
-      className={cn("group shrink-0 gap-x-1", className)}
+      className={clns("group shrink-0 gap-x-1", className)}
       onFocus={_onFocus}
       onBlur={onBlur}
     >
       <BaseButton
         onClick={onClick}
         aria-label="Search"
-        className={cn("focus-visible:bg-accent", ICON_BUTTON_CLS)}
+        className={clns("focus-visible:bg-accent", ICON_BUTTON_CLS)}
       >
         <SearchIcon className="trans-300 transition-color fill-gray-500 group-hover:fill-gray-800 dark:fill-gray-500 dark:group-hover:fill-gray-400" />
       </BaseButton>
@@ -66,7 +66,7 @@ export default function BaseSearchBar({
         <BaseButton
           onClick={onClearClick}
           aria-label="Search"
-          className={cn("focus-visible:bg-accent", ICON_BUTTON_CLS)}
+          className={clns("focus-visible:bg-accent", ICON_BUTTON_CLS)}
         >
           <CloseIcon className="trans-300 transition-color stroke-gray-500 stroke-2 group-hover:stroke-gray-800 dark:stroke-gray-500 dark:group-hover:fill-gray-400" />
         </BaseButton>

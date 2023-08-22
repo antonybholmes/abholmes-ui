@@ -1,11 +1,10 @@
-"use client"
 
-import type IClassProps from "@interfaces/class-props"
 import { useEffect, useState } from "react"
 
-import ComputerIcon from "../../icons/computer"
+import { ComputerIcon } from "../../icons/computer"
 import { MoonIcon } from "../../icons/moon"
 import { SunIcon } from "../../icons/sun"
+import { IElementProps } from "../../interfaces/element-props"
 import { applyTheme, getTheme } from "../../lib/theme"
 import { Tooltip } from "../tooltip"
 import { Button } from "../ui/button"
@@ -16,7 +15,7 @@ import {
   DropdownMenuTrigger,
 } from "../ui/dropdown-menu"
 
-export default function ThemeMenu({ className }: IClassProps) {
+export function ThemeMenu({ className }: IElementProps) {
   const [dropDownVisible, setDropDownVisible] = useState(false)
 
   const [theme, setTheme] = useState<string>("system")

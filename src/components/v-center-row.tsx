@@ -1,6 +1,5 @@
 import { IDivProps } from "@interfaces/div-props"
 import { ForwardedRef, forwardRef } from "react"
-import { cn } from "../lib/class-names"
 import { BaseRow } from "./base-row"
 
 export const V_CENTER_ROW_CLS = "flex flex-row items-center"
@@ -10,7 +9,7 @@ const VCenterRow = forwardRef(function VCenterRow(
   ref: ForwardedRef<HTMLDivElement>,
 ) {
   return (
-    <BaseRow ref={ref} className={cn(V_CENTER_ROW_CLS, className)} {...props}>
+    <BaseRow ref={ref} className={clns(V_CENTER_ROW_CLS, className)} {...props}>
       {children}
     </BaseRow>
   )

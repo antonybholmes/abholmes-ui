@@ -15,21 +15,7 @@
     "outDir": "./lib/esm",
     "declaration": true,
     "sourceMap": true,
-    "baseUrl": ".",
     "rootDir": "./src",
-    "paths": {
-      "@*": ["src/*"],
-      "@components/*": ["src/components/*"],
-      "@assets/*": ["src/assets/*"],
-      "..lib/*": ["src/lib/*"],
-      "@hooks/*": ["src/hooks/*"],
-      "@modules/*": ["src/modules/*"],
-      "@interfaces/*": ["src/interfaces/*"],
-      "..icons/*": ["src/icons/*"],
-      "@context/*": ["src/context/*"],
-      "@styles/*": ["src/styles/*"],
-      "@layouts/*": ["src/layouts/*"]
-    }
   },
   "include": ["src/**/*.ts", "src/**/*.tsx"],
   "exclude": ["node_modules", "lib"]

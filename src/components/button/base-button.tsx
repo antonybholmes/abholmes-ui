@@ -1,8 +1,8 @@
 import useMouseUpListener from "../../hooks/use-mouseup-listener"
 import IButtonProps from "../../interfaces/button-props"
 
+import { clns } from "@lib/class-names"
 import { ForwardedRef, forwardRef } from "react"
-import { cn } from "../../lib/class-names"
 import { BASE_BUTTON_CLS } from "../../theme"
 
 export type ButtonType = "button" | "submit" | "reset" | undefined
@@ -24,7 +24,7 @@ export const BaseButton = forwardRef(function BaseButton(
   return (
     <button
       ref={ref}
-      className={cn(BASE_BUTTON_CLS, className, [
+      className={clns(BASE_BUTTON_CLS, className, [
         isSelected,
         selectedClassName,
         unSelectedClassName,

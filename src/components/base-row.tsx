@@ -1,6 +1,6 @@
 import { IDivProps } from "@interfaces/div-props"
+import { clns } from "@lib/class-names"
 import { ForwardedRef, forwardRef } from "react"
-import { cn } from "../lib/class-names"
 
 export const ROW_CLS = "flex flex-row"
 
@@ -9,7 +9,7 @@ export const BaseRow = forwardRef(function BaseRow(
   ref: ForwardedRef<HTMLDivElement>,
 ) {
   return (
-    <div ref={ref} className={cn(ROW_CLS, className)} {...props}>
+    <div ref={ref} className={clns(ROW_CLS, className)} {...props}>
       {children}
     </div>
   )

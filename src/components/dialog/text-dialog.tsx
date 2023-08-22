@@ -24,7 +24,7 @@ export default function TextDialog({
     // <DynamicModal
     //   visible={visible}
     //   onCancel={onCancel}
-    //   className={cn("flex flex-col gap-y-2 text-sm", className)}
+    //   className={clns("flex flex-col gap-y-2 text-sm", className)}
     // >
     //   <h1 className="text-lg font-bold">{title}</h1>
     //   <p>{text}</p>

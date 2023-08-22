@@ -14,7 +14,7 @@ type CSSClass =
   | [boolean, CSSClass]
   | [boolean, CSSClass, CSSClass]
 
-function _cn(args: CSSClass, classes: Set<String>) {
+function _clns(args: CSSClass, classes: Set<String>) {
   if (!args) {
     return
   }
@@ -27,23 +27,23 @@ function _cn(args: CSSClass, classes: Set<String>) {
         switch (args.length) {
           case 2:
             if (args[0]) {
-              _cn(args[1], classes)
+              _clns(args[1], classes)
             }
             break
           case 3:
-            args[0] ? _cn(args[1], classes) : _cn(args[2], classes)
+            args[0] ? _clns(args[1], classes) : _clns(args[2], classes)
             break
           default:
             break
         }
       } else {
-        args.forEach(arg => _cn(arg, classes))
+        args.forEach(arg => _clns(arg, classes))
       }
     } else {
       // add keys whose values evaluate to true
       for (const [key, value] of Object.entries(args)) {
         if (value) {
-          _cn(key, classes)
+          _clns(key, classes)
         }
       }
     }
@@ -67,11 +67,11 @@ function _cn(args: CSSClass, classes: Set<String>) {
  * @param args string or array of strings of classnames. Also supports condition c
  * @returns a space separated string of class names.
  */
-export function cn(...args: CSSClass[]): string | undefined {
+export function clns(...args: CSSClass[]): string | undefined {
   const used = new Set<string>()
   const classes: Set<String> = new Set()
 
-  _cn(args, classes)
+  _clns(args, classes)
 
   // join all the pieces into one then split on space
   // and remove duplicates

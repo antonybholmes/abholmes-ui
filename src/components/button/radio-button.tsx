@@ -1,5 +1,5 @@
+import { clns } from "@lib/class-names"
 import IButtonProps from "../../interfaces/button-props"
-import { cn } from "../../lib/class-names"
 import VCenterRow from "../v-center-row"
 import { BaseButton } from "./base-button"
 
@@ -28,12 +28,12 @@ export default function RadioButton({
         {...props}
       >
         {/* <div
-          className={cn(
+          className={clns(
             `relative overflow-hidden rounded-full border bg-white`,
             [
               selected,
               "border-theme-600",
-              cn("trans-300 transition-colors", [hover, "!border-theme-400", "!border-gray-300"]),
+              clns("trans-300 transition-colors", [hover, "!border-theme-400", "!border-gray-300"]),
             ]
           )}
           style={{ width: RADIO_SIZE, height: RADIO_SIZE }}
@@ -60,7 +60,7 @@ export default function RadioButton({
             cx="8"
             cy="8"
             r="7"
-            className={cn("trans-300 transition-color fill-white", [
+            className={clns("trans-300 transition-color fill-white", [
               selected,
               "stroke-theme-600",
               "stroke-gray-300 group-hover:stroke-gray-500",
