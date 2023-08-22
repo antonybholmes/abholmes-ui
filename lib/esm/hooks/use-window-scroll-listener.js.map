@@ -1,0 +1,1 @@
+{"version":3,"file":"use-window-scroll-listener.js","sourceRoot":"","sources":["../../../src/hooks/use-window-scroll-listener.ts"],"names":[],"mappings":"AAAA,OAAO,iBAAiB,MAAM,uBAAuB,CAAA;AAErD,MAAM,CAAC,OAAO,UAAU,uBAAuB,CAAC,OAAY;IAC1D,iBAAiB,CAAC,QAAQ,EAAE,OAAO,CAAC,CAAA;AACtC,CAAC"}

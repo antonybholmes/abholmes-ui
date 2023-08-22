@@ -1,0 +1,1 @@
+{"version":3,"file":"use-mousedown-listener.js","sourceRoot":"","sources":["../../../src/hooks/use-mousedown-listener.ts"],"names":[],"mappings":"AAAA,OAAO,iBAAiB,MAAM,uBAAuB,CAAA;AAErD,MAAM,CAAC,OAAO,UAAU,oBAAoB,CAAC,OAAY;IACvD,iBAAiB,CAAC,WAAW,EAAE,OAAO,CAAC,CAAA;AACzC,CAAC"}
