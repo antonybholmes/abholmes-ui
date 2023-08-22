@@ -2,17 +2,17 @@ import { Slot } from "@radix-ui/react-slot"
 import { cva, type VariantProps } from "class-variance-authority"
 import * as React from "react"
 
+import { cn } from "../../lib/shadcn-utils"
 import {
-	BASE_BUTTON_CLS,
-	BASE_PRIMARY_BUTTON_CLS,
-	DEFAULT_BUTTON_SIZE_CLS,
-	FOCUS_RING_CLS,
-	ICON_BUTTON_SIZE_CLS,
-	PRIMARY_BUTTON_CLS,
-	ROUNDED_BUTTON_CLS,
-	SECONDARY_BUTTON_CLS,
+  BASE_BUTTON_CLS,
+  BASE_PRIMARY_BUTTON_CLS,
+  DEFAULT_BUTTON_SIZE_CLS,
+  FOCUS_RING_CLS,
+  ICON_BUTTON_SIZE_CLS,
+  PRIMARY_BUTTON_CLS,
+  ROUNDED_BUTTON_CLS,
+  SECONDARY_BUTTON_CLS,
 } from "../../theme"
-import { cn } from "../lib/shadcn-utils"
 
 const BASE_CLS = cn(BASE_BUTTON_CLS, ROUNDED_BUTTON_CLS)
 

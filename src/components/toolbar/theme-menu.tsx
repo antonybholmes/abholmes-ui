@@ -3,18 +3,18 @@
 import type IClassProps from "@interfaces/class-props"
 import { useEffect, useState } from "react"
 
-import { Tooltip } from "@components/tooltip"
-import { Button } from "@components/ui/button"
+import ComputerIcon from "../../icons/computer"
+import { MoonIcon } from "../../icons/moon"
+import { SunIcon } from "../../icons/sun"
+import { applyTheme, getTheme } from "../../lib/theme"
+import { Tooltip } from "../tooltip"
+import { Button } from "../ui/button"
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
-} from "@components/ui/dropdown-menu"
-import ComputerIcon from "@icons/computer"
-import { MoonIcon } from "@icons/moon"
-import { SunIcon } from "@icons/sun"
-import { applyTheme, getTheme } from "../lib/theme"
+} from "../ui/dropdown-menu"
 
 export default function ThemeMenu({ className }: IClassProps) {
   const [dropDownVisible, setDropDownVisible] = useState(false)
