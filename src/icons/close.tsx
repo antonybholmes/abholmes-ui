@@ -1,8 +1,8 @@
-import cn from "@lib/class-names"
 import type IIconProps from "../interfaces/icon-props"
 import { ICON_CLS } from "../interfaces/icon-props"
+import cn from "../lib/class-names"
 
-export default function CloseIcon({ size = "w-4", className }: IIconProps) {
+export function CloseIcon({ size = "w-4", className }: IIconProps) {
   return (
     <svg
       viewBox="0 0 32 32"

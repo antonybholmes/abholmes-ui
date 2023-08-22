@@ -1,7 +1,7 @@
 import VCenterRow from "@components/v-center-row"
-import CloseIcon from "@icons/close"
-import SearchIcon from "@icons/search"
-import cn from "@lib/class-names"
+import { CloseIcon } from "@icons/close"
+import { SearchIcon } from "@icons/search"
+import cn from "../lib/class-names"
 
 import { FocusEvent, MouseEvent, useRef } from "react"
 

@@ -1,7 +1,7 @@
-import { Button } from "@components/ui/button"
-import IButtonProps from "@interfaces/button-props"
-import { cn } from "@lib/shadcn-utils"
 import { ForwardedRef, forwardRef } from "react"
+import { Button } from "../../components/ui/button"
+import IButtonProps from "../../interfaces/button-props"
+import { cn } from "../../lib/shadcn-utils"
 
 const ToolbarButton = forwardRef(function ToolbarButton(
   { size = "default", className, children, ...props }: IButtonProps,

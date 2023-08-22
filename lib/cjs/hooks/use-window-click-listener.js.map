@@ -1,1 +1,1 @@
-{"version":3,"file":"use-window-click-listener.js","sourceRoot":"","sources":["../../../src/hooks/use-window-click-listener.ts"],"names":[],"mappings":";;;;;AAAA,8EAAqD;AAErD,SAAwB,sBAAsB,CAAC,OAAY;IACzD,IAAA,6BAAiB,EAAC,OAAO,EAAE,OAAO,CAAC,CAAA;AACrC,CAAC;AAFD,yCAEC"}
+{"version":3,"file":"use-window-click-listener.js","sourceRoot":"","sources":["../../../src/hooks/use-window-click-listener.ts"],"names":[],"mappings":";;;;;AAAA,gFAAqD;AAErD,SAAwB,sBAAsB,CAAC,OAAY;IACzD,IAAA,6BAAiB,EAAC,OAAO,EAAE,OAAO,CAAC,CAAA;AACrC,CAAC;AAFD,yCAEC"}

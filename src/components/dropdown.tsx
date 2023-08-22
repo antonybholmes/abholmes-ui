@@ -1,7 +1,7 @@
 import MenuButton from "@components/toolbar/menu-button"
 import IElementProps from "@interfaces/element-props"
-import cn from "@lib/class-names"
 import { MouseEvent, ReactElement } from "react"
+import cn from "../lib/class-names"
 import { BaseDropDown, DROPDOWN_CLS } from "./base-dropdown"
 
 export interface IDropDownMenuItem<T> {

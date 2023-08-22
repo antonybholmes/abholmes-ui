@@ -1,8 +1,8 @@
 import * as PopoverPrimitive from "@radix-ui/react-popover"
 import * as React from "react"
 
-import { cn } from "@lib/shadcn-utils"
 import { ROUNDED_BUTTON_CLS } from "@theme"
+import { cn } from "../lib/shadcn-utils"
 
 const Popover = PopoverPrimitive.Root
 

@@ -1,8 +1,8 @@
-import cn from "@lib/class-names"
 import type IIconProps from "../interfaces/icon-props"
 import { ICON_CLS } from "../interfaces/icon-props"
+import cn from "../lib/class-names"
 
-export default function ChevronRightIcon({
+export function ChevronRightIcon({
   size = "w-4",
   className,
 }: IIconProps) {

@@ -1,5 +1,5 @@
 /// <reference types="react" />
-import IButtonProps from "@interfaces/button-props";
+import IButtonProps from "../../interfaces/button-props";
 export interface IMenuButtonProps extends IButtonProps {
     showMenu: boolean;
 }

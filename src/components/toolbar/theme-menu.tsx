@@ -12,9 +12,9 @@ import {
   DropdownMenuTrigger,
 } from "@components/ui/dropdown-menu"
 import ComputerIcon from "@icons/computer"
-import MoonIcon from "@icons/moon"
-import SunIcon from "@icons/sun"
-import { applyTheme, getTheme } from "@lib/theme"
+import { MoonIcon } from "@icons/moon"
+import { SunIcon } from "@icons/sun"
+import { applyTheme, getTheme } from "../lib/theme"
 
 export default function ThemeMenu({ className }: IClassProps) {
   const [dropDownVisible, setDropDownVisible] = useState(false)

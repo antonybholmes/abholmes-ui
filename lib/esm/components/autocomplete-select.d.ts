@@ -1,5 +1,5 @@
+import { IDBItem } from "..lib/types";
 import IChildrenProps from "@interfaces/children-props";
-import { IDBItem } from "@lib/types";
 import { ReactElement } from "react";
 export type ISelectClick<T extends IDBItem> = (selected: T[]) => void;
 export type IRemoveClick<T extends IDBItem> = (item: T) => void;
@@ -19,4 +19,5 @@ interface IProps<T extends IDBItem> extends IChildrenProps {
     maxItems?: number;
 }
 export default function AutocompleteSelect<T extends IDBItem>({ id, name, items, onClick, placeholder, maxItems, showRemoveItems, selectedMap, renderListItem, renderRemoveItem, className, children, }: IProps<T>): import("react/jsx-runtime").JSX.Element;
-export {};
+export { };
+

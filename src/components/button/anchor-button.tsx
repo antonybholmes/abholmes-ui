@@ -1,6 +1,6 @@
-import useMouseUpListener from "@hooks/use-mouseup-listener"
-import ILinkProps from "@interfaces/link-props"
 import { MouseEvent } from "react"
+import useMouseUpListener from "../../hooks/use-mouseup-listener"
+import ILinkProps from "../../interfaces/link-props"
 
 export default function AnchorButton({
   href = "#",

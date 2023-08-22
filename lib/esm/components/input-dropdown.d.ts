@@ -1,5 +1,5 @@
+import { IDBItem } from "..lib/types";
 import IElementProps from "@interfaces/element-props";
-import { IDBItem } from "@lib/types";
 import type { DropDownClick, DropDownRenderer } from "./dropdown";
 interface IProps<T extends IDBItem> extends IElementProps {
     id: string;
@@ -12,4 +12,5 @@ interface IProps<T extends IDBItem> extends IElementProps {
     menuClassName?: string;
 }
 export default function InputDropdown<T extends IDBItem>({ id, name, value, items, onDropClick, placeholder, renderListItem, className, menuClassName, }: IProps<T>): import("react/jsx-runtime").JSX.Element;
-export {};
+export { };
+

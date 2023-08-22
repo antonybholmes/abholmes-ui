@@ -1,6 +1,6 @@
-import VCenterRow from "@components/v-center-row"
-import IButtonProps from "@interfaces/button-props"
-import cn from "@lib/class-names"
+import IButtonProps from "../../interfaces/button-props"
+import cn from "../../lib/class-names"
+import VCenterRow from "../v-center-row"
 import { BaseButton } from "./base-button"
 
 // export const RADIO_SIZE = "18px"

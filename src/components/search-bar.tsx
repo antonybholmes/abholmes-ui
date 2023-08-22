@@ -1,11 +1,11 @@
-import cn from "@lib/class-names"
+import cn from "../lib/class-names"
 
 import {
-  BASE_BUTTON_CLS,
-  INPUT_BORDER_CLS,
-  INPUT_DARK_BG_CLS,
-  INPUT_DARK_BORDER_CLS,
-  ROUNDED_BUTTON_CLS,
+	BASE_BUTTON_CLS,
+	INPUT_BORDER_CLS,
+	INPUT_DARK_BG_CLS,
+	INPUT_DARK_BORDER_CLS,
+	ROUNDED_BUTTON_CLS,
 } from "@theme"
 import { useState } from "react"
 import BaseSearchBar, { ISearchBarProps } from "./base-search-bar"

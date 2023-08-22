@@ -1,5 +1,5 @@
-import cn from "@lib/class-names"
 import { ComponentPropsWithoutRef } from "react"
+import cn from "../../lib/class-names"
 
 interface IProps extends ComponentPropsWithoutRef<"div"> {
   visible: boolean

@@ -1,7 +1,7 @@
 import useDelayHide from "@hooks/use-delay-hide"
 import type IChildrenProps from "@interfaces/children-props"
-import cn from "@lib/class-names"
 import { MouseEvent, useCallback, useEffect, useRef } from "react"
+import cn from "../../lib/class-names"
 import ModalBgScreen from "./modal-bg-screen"
 
 export interface IModalProps extends IChildrenProps {

@@ -1,6 +1,6 @@
 import type IIconProps from "@interfaces/icon-props"
 
-export default function SunIcon({ className }: IIconProps) {
+export function SunIcon({ className }: IIconProps) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"

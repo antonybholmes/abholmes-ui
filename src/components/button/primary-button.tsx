@@ -1,6 +1,6 @@
-import { Button } from "@components/ui/button"
-import IButtonProps from "@interfaces/button-props"
 import { ForwardedRef, forwardRef } from "react"
+import IButtonProps from "../../interfaces/button-props"
+import { Button } from "../ui/button"
 
 const PrimaryButton = forwardRef(function PrimaryButton(
   { children, ...props }: IButtonProps,

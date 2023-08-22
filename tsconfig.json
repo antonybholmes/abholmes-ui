@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "target": "ESNext",
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
@@ -20,11 +21,11 @@
       "@*": ["src/*"],
       "@components/*": ["src/components/*"],
       "@assets/*": ["src/assets/*"],
-      "@lib/*": ["src/lib/*"],
+      "..lib/*": ["src/lib/*"],
       "@hooks/*": ["src/hooks/*"],
       "@modules/*": ["src/modules/*"],
       "@interfaces/*": ["src/interfaces/*"],
-      "@icons/*": ["src/icons/*"],
+      "..icons/*": ["src/icons/*"],
       "@context/*": ["src/context/*"],
       "@styles/*": ["src/styles/*"],
       "@layouts/*": ["src/layouts/*"]

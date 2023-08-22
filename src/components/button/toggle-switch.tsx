@@ -1,8 +1,8 @@
-import VCenterRow from "@components/v-center-row"
-import cn from "@lib/class-names"
 import * as Switch from "@radix-ui/react-switch"
 import { BUTTON_W_CLS, FOCUS_RING_CLS } from "@theme"
 import { ForwardedRef, forwardRef } from "react"
+import cn from "../../lib/class-names"
+import VCenterRow from "../v-center-row"
 import { type ICheckBoxProps } from "./check-box"
 
 const TOGGLE_CLS = cn(

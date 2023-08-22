@@ -1,9 +1,9 @@
-import IButtonProps from "@interfaces/button-props"
-import cn from "@lib/class-names"
-import { PRIMARY_LINK_CLS } from "@theme"
-import BasicButton from "./basic-button"
+import IButtonProps from "../../interfaces/button-props"
+import cn from "../../lib/class-names"
+import { PRIMARY_LINK_CLS } from "../../theme"
+import { BasicButton } from "./basic-button"
 
-export default function BlueLinkButton({
+export function BlueLinkButton({
   className,
   children,
   ...props

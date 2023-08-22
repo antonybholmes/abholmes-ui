@@ -1,7 +1,7 @@
 import { CHEVRON_CLS } from "@/consts"
-import cn from "@lib/class-names"
 import * as Checkbox from "@radix-ui/react-checkbox"
 import { ForwardedRef, forwardRef } from "react"
+import cn from "../../lib/class-names"
 
 import IButtonProps from "@interfaces/button-props"
 import {

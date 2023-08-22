@@ -1,9 +1,9 @@
-import { BaseButton } from "@components/button/base-button"
-import BlueLinkButton from "@components/button/blue-link-button"
+import { BaseButton } from "./button/base-button"
+import { BlueLinkButton } from "./button/blue-link-button"
 
-import ChevronRightIcon from "@icons/chevron-right"
-import cn from "@lib/class-names"
-import { IDateRange } from "@lib/types"
+import { ChevronRightIcon } from "@icons/chevron-right"
+import cn from "../lib/class-names"
+
 import { addMonths, format, getDay, getDaysInMonth, subMonths } from "date-fns"
 import { range } from "lodash"
 import { MouseEvent, useEffect, useRef, useState } from "react"
@@ -11,16 +11,17 @@ import { CHEVRON_CLS } from "src/consts"
 import BaseCol from "./base-col"
 
 import {
-    CENTERED_BUTTON_CLS,
-    FOCUS_BORDER_CLS,
-    MENU_BUTTON_CLS,
-    PILL_BUTTON_CLS,
-    PRIMARY_FOCUS_BORDER_CLS,
+  CENTERED_BUTTON_CLS,
+  FOCUS_BORDER_CLS,
+  MENU_BUTTON_CLS,
+  PILL_BUTTON_CLS,
+  PRIMARY_FOCUS_BORDER_CLS,
 } from "@theme"
 import { BaseRow } from "./base-row"
 import HCenterRow from "./h-center-row"
 
-import { sortDateRange } from "@lib/utils"
+import { IDateUpdate } from "@interfaces"
+import { IDateRange } from "@interfaces/date-range"
 import ToolbarButton from "./toolbar/toolbar-button"
 import ToolbarIconButton from "./toolbar/toolbar-icon-button"
 
@@ -30,14 +31,15 @@ const SIZE = "h-8 w-8"
 
 const W = "14rem"
 
-export interface IDateUpdate extends IDateRange {
-  // whether to trigger the ui to update the dates.
-  // When using the mouse on the months, this should
-  // be set to false to prevent clicking on different
-  // months triggering a refresh since this is jarring
-  // shift in the ui.
-  update: boolean
+export function sortDateRange(dateRange: IDateRange) {
+  // swap to keep dates in order
+  if (dateRange.from > dateRange.to) {
+    return { from: dateRange.to, to: dateRange.from }
+  } else {
+    return dateRange
+  }
 }
+
 
 // function getDaysInMonth(date:Date) {
 //   let year = date.getFullYear()
@@ -512,7 +514,7 @@ export function DateRangePicker({
         {/* </VCenterRow> */}
         <div className="px-2 py-2">
           <BlueLinkButton
-            onClick={e => onDateClick(new Date())}
+            onClick={(e: any) => onDateClick(new Date())}
             aria-label="Today"
             className="text-sm"
           >
