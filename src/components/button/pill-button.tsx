@@ -1,4 +1,5 @@
 import IButtonProps from "../../interfaces/button-props"
+import { clns } from "../../lib/class-names"
 import { PILL_BUTTON_CLS } from "../../theme"
 import { BaseButton } from "./base-button"
 

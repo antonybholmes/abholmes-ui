@@ -1,4 +1,5 @@
-import type IFieldMap from "@interfaces/field-map";
+import IFieldMap from "../interfaces/field-map";
+import INumberMap from "../interfaces/number-map";
 export default function useFetch(url: string, params: IFieldMap): {
     data: any;
     error: any;
