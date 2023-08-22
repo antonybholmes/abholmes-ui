@@ -1,0 +1,1 @@
+{"version":3,"file":"dynamic-dialog.js","sourceRoot":"","sources":["../../../../src/components/dialog/dynamic-dialog.tsx"],"names":[],"mappings":";AAAA,OAAO,OAAO,MAAM,cAAc,CAAA;AAElC,MAAM,CAAC,IAAM,YAAY,GAAG,OAAO,CAAC,cAAM,OAAA,MAAM,CAAC,gBAAgB,CAAC,EAAxB,CAAwB,EAAE;IAClE,OAAO,EAAE,cAAM,OAAA,qCAAiB,EAAjB,CAAiB;CACjC,CAAC,CAAA"}

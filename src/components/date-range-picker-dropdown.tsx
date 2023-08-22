@@ -9,7 +9,7 @@ import { DateRangePicker, IDateUpdate } from "./date-range-picker"
 import { BaseDropDown } from "@abholmes/ui"
 import ChevronRightIcon from "@icons/chevron-right"
 import { FOCUS_RING_CLS, INPUT_DARK_CLS, ROUNDED_BUTTON_CLS } from "@theme"
-import BaseRow from "./base-row"
+import { BaseRow } from "./base-row"
 import ToolbarButton from "./toolbar/toolbar-button"
 import VCenterRow from "./v-center-row"
 

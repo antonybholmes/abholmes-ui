@@ -1,5 +1,5 @@
 import BaseCol from "@components/base-col"
-import BaseRow from "@components/base-row"
+import { BaseRow } from "@components/base-row"
 
 import CheckBox from "@components/button/check-box"
 import ChevronRightIcon from "@icons/chevron-right"

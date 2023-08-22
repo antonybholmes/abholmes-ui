@@ -1,0 +1,1 @@
+{"version":3,"file":"red-alert.js","sourceRoot":"","sources":["../../../../src/components/alerts/red-alert.tsx"],"names":[],"mappings":";AACA,OAAO,EAAE,MAAM,kBAAkB,CAAA;AAEjC,MAAM,CAAC,IAAM,SAAS,GACpB,uEAAuE,CAAA;AAEzE,MAAM,CAAC,OAAO,UAAU,QAAQ,CAAC,EAAuC;QAArC,SAAS,eAAA,EAAE,QAAQ,cAAA;IACpD,OAAO,cAAK,SAAS,EAAE,EAAE,CAAC,SAAS,EAAE,SAAS,CAAC,YAAG,QAAQ,GAAO,CAAA;AACnE,CAAC"}

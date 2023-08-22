@@ -1,0 +1,1 @@
+{"version":3,"file":"dynamic-user-menu.js","sourceRoot":"","sources":["../../../../src/components/toolbar/dynamic-user-menu.tsx"],"names":[],"mappings":";AAAA,OAAO,OAAO,MAAM,cAAc,CAAA;AAElC,MAAM,CAAC,IAAM,eAAe,GAAG,OAAO,CAAC,cAAM,OAAA,MAAM,CAAC,aAAa,CAAC,EAArB,CAAqB,EAAE;IAClE,OAAO,EAAE,cAAM,OAAA,qCAAiB,EAAjB,CAAiB;CACjC,CAAC,CAAA"}

@@ -1,13 +1,13 @@
 import BaseCol from "@components/base-col"
-import BaseRow from "@components/base-row"
+import { BaseRow } from "@components/base-row"
 
 import IElementProps from "@interfaces/element-props"
 import cn from "@lib/class-names"
 import {
-  BASE_BUTTON_CLS,
-  CENTERED_BUTTON_CLS,
-  FOCUS_RING_CLS,
-  ROUNDED_BUTTON_CLS,
+    BASE_BUTTON_CLS,
+    CENTERED_BUTTON_CLS,
+    FOCUS_RING_CLS,
+    ROUNDED_BUTTON_CLS,
 } from "@theme"
 import { MouseEvent, ReactNode, useEffect, useRef, useState } from "react"
 import BaseButton from "./button/base-button"

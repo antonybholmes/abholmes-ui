@@ -1,5 +1,5 @@
 import BaseCol from "@components/base-col"
-import BaseRow from "@components/base-row"
+import { BaseRow } from "@components/base-row"
 
 import IElementProps from "@interfaces/element-props"
 import cn from "@lib/class-names"
@@ -10,7 +10,7 @@ import {
   PILL_BUTTON_CLS,
 } from "@theme"
 import { MouseEvent, ReactNode, useEffect, useRef, useState } from "react"
-import BaseButton from "./button/base-button"
+import { BaseButton } from "./button/base-button"
 
 export const PILL_CLS = cn(
   BASE_BUTTON_CLS,
@@ -74,13 +74,13 @@ export default function PillTabs({
               return (
                 <BaseButton
                   key={idx}
-                  ref={el => (tabsRef.current[idx] = el)}
+                  ref={(el: HTMLElement) => (tabsRef.current[idx] = el)}
                   className={cn(PILL_CLS, [
                     idx === activeTabIndex,
                     "text-theme-500 dark:text-gray-50",
                     "hover:bg-accent",
                   ])}
-                  onClick={e => _onClick(e, idx)}
+                  onClick={(e: MouseEvent) => _onClick(e, idx)}
                 >
                   {tab.tab}
                 </BaseButton>

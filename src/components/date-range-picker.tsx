@@ -11,13 +11,13 @@ import { CHEVRON_CLS } from "src/consts"
 import BaseCol from "./base-col"
 
 import {
-  CENTERED_BUTTON_CLS,
-  FOCUS_BORDER_CLS,
-  MENU_BUTTON_CLS,
-  PILL_BUTTON_CLS,
-  PRIMARY_FOCUS_BORDER_CLS,
+    CENTERED_BUTTON_CLS,
+    FOCUS_BORDER_CLS,
+    MENU_BUTTON_CLS,
+    PILL_BUTTON_CLS,
+    PRIMARY_FOCUS_BORDER_CLS,
 } from "@theme"
-import BaseRow from "./base-row"
+import { BaseRow } from "./base-row"
 import HCenterRow from "./h-center-row"
 
 import { sortDateRange } from "@lib/utils"
