@@ -7,7 +7,7 @@ import { ForwardedRef, forwardRef } from "react"
 
 export type ButtonType = "button" | "submit" | "reset" | undefined
 
-const BaseButton = forwardRef(function BaseButton(
+export const BaseButton = forwardRef(function BaseButton(
   {
     onMouseUp,
     isSelected = false,
@@ -35,5 +35,3 @@ const BaseButton = forwardRef(function BaseButton(
     </button>
   )
 })
-
-export default BaseButton

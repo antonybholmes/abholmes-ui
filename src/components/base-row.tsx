@@ -4,7 +4,7 @@ import cn from "../lib/class-names"
 
 export const ROW_CLS = "flex flex-row"
 
-const BaseRow = forwardRef(function BaseRow(
+export const BaseRow = forwardRef(function BaseRow(
   { className, children, ...props }: IDivProps,
   ref: ForwardedRef<HTMLDivElement>,
 ) {
@@ -14,5 +14,3 @@ const BaseRow = forwardRef(function BaseRow(
     </div>
   )
 })
-
-export default BaseRow
