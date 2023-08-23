@@ -20,7 +20,7 @@ const THUMB_CLS = clns(
   "data-[state=checked]:translate-x-3 data-[state=unchecked]:translate-x-0",
 )
 
-const ToggleSwitch = forwardRef(function ToggleSwitch(
+export const ToggleSwitch = forwardRef(function ToggleSwitch(
   { index = -1, onCheckClick, isSelected, className, children }: ICheckBoxProps,
   ref: ForwardedRef<HTMLButtonElement>,
 ) {
@@ -43,5 +43,3 @@ const ToggleSwitch = forwardRef(function ToggleSwitch(
     </VCenterRow>
   )
 })
-
-export default ToggleSwitch

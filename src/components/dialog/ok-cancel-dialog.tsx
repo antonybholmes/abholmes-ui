@@ -29,7 +29,7 @@ export function OKCancelDialog({
       {/* <DialogTrigger asChild>
         <Button variant="outline">Edit Profile</Button>
       </DialogTrigger> */}
-      <AlertDialogContent onFocusOutside={}>
+      <AlertDialogContent>
         <AlertDialogHeader>
           <AlertDialogTitle>{title}</AlertDialogTitle>
           <AlertDialogDescription>{text}</AlertDialogDescription>
